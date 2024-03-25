@@ -1,0 +1,127 @@
+@font-face {
+    font-family: clock-font;
+    src: url(font.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Montserrat,sans-serif;;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: black;
+}
+
+.clock {
+    height: 30%;
+    width: 45%;
+    display: flex;
+    border: #ffffff solid 2px;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    border-radius: 5px;
+}
+    
+
+#hours, .colon, #minutes{
+    font-size: 170px;
+    font-family: clock-font;
+    padding: 10px;
+    color: #1d9bf0;
+}
+
+#format {
+    font-size: 15px;
+    margin-top: 60px;
+    font-weight: bold;
+    color: #1d9bf0;
+}
+
+.day {
+    display: flex;
+    flex-direction: column;
+    font-size: 56px;
+    margin: 15px 0 0 10px;
+    color: #1d9bf0;
+}
+
+.date {
+    font-size: 80px;
+    display: flex;
+}
+
+#month, #date {
+    font-family: clock-font;
+    flex-direction: row;
+}
+
+@media screen and (max-width: 767px) {
+    .clock {
+        height: 25%;
+        width: 85% ;
+    }
+
+    #hours, .colon, #minutes {
+        font-size: 100px;
+    }
+    
+    .day {
+        font-size: 30px;
+    }
+
+    .date {
+        font-size: 30px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .clock {
+        height: 25%;
+        width: 70% ;
+    }
+
+    #hours, .colon, #minutes {
+        font-size: 180px;
+    }
+    
+    .day {
+        font-size: 80px;
+    }
+
+    .date {
+        font-size: 70px;
+    }
+
+    #format{
+        font-size: 20px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .clock {
+        height: 30%;
+        width: 48% ;
+    }
+
+    #hours, .colon, #minutes {
+        font-size: 170px;
+    }
+    
+    .day {
+        font-size: 56px;
+    }
+
+    .date {
+        font-size: 80px;
+    }
+
+    #format{
+        font-size: 15px;
+    }
+}
