@@ -4,9 +4,10 @@ let hours = a.getHours()
 let minutes = a.getMinutes()
 let day = a.getDay()
 let date = a.getDate()
-let month = a.getMonth()
+let mont = a.getMonth()
 
 let days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"][day]
+  let month = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12][mont]
 
 let h = document.getElementById("hours");
 let m = document.getElementById("minutes");
